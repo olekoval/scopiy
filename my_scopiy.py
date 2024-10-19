@@ -1,4 +1,4 @@
-def find_intervents(row, mn, name):
+def find_intervents(row, mn, name) -> str:
     """
     Класифікує рядок
 
@@ -25,7 +25,7 @@ def find_intervents(row, mn, name):
 if __name__ == "__main__":
     
     mn = [{'a', 'b'}, {'c', 'd'}, {'e', 'f'}]
-    mnn = "f,c,a,f,j,k,m,n,c,e"
+    mnn = "d,c,a,f,j,k,m,n,c,e"
     name = ['Колоноскопия', 'Эндоскопия', 'Гистероскопия']
 
     print(find_intervents(mnn, mn, name))
