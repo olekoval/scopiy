@@ -14,9 +14,11 @@ def find_intervents(row, mn, name):
     
     """
     row_set = set(row.split(","))
-    for index, value in enumerate(range(len(mn))):
-        element = len(mn[index] & row_set)
-        if element > 0:   
+    n = len(mn)
+    for index, value in enumerate(range(n)):
+        intersection = mn[index] & row_set
+        count = len(intersection)
+        if count > 0:   
               return name[index]
 
         
